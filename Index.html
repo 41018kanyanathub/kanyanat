@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<style>
+*{    
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+
+.container{width:1024px;margin:0 auto;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;}
+header{
+    background-image:url(images/Header.jpg);height:256px;}
+nav{
+    flex:1;
+}
+article{
+    background-color:#E6D1F2
+    padding:5px
+    flex:4;
+}
+footer{
+    background-color:#d8c9ea;
+    padding:25px;
+    text-align:center;
+    color:#76527a;
+}
+
+section{display:flex;}
+
+a:link{
+        color:red;
+    text-decoration:none;
+    background-color: #F0F4BF;
+    display:block;
+    width:100%px;
+    padding:10px;
+     }
+a:visited{
+        color:#76527a;
+     }
+a:hover{
+        color:orange;
+    background-color: #F6E1C3;
+     }
+a:active{
+        color:brown;
+     }
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,"Noto Sans Thai",sans-serif;background:white}
+.container{width:1024px;margin:0 auto;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;}
+header{
+	background-image:url(images/header.jpg);height:256px;}
+nav{
+	flex:1;
+}
+header h1{font-size:42px;text-align:center}
+section{display:flex}
+nav{width:210px;flex:none;background:#f0f4bf}
+nav button{border:0;border-bottom:1px solid #FB6F92;color:#FB6F92;background:#E6D1F2;display:block;width:100%;padding:18px 12px;font-size:18px;text-align:left;line-height:1.35;cursor:pointer}
+nav button:hover,nav button.active{color:#FB6F92;background:#E6D1F2;font-weight:bold}
+article{flex:1;background:#FCF695;padding:18px 20px 28px;min-height:430px}
+article h1{color:#111;font-size:31px;margin-bottom:12px}
+article h2{color:#b71c1c;font-size:23px;margin:13px 0 8px}
+article p{font-size:17px;line-height:1.75;margin-bottom:9px}
+.English{font-size:24px;font-weight:bold}
+.card{background:rgba(255,255,255,.45);border-left:5px solid #d92d2d;padding:10px 14px;margin:10px 0}
+.page{display:none}.page.show{display:block}
+footer{background:green;padding:22px;text-align:center;color:white;line-height:1.7;font-size:16px}
+@media(max-width:600px){header{height:150px}header h1{font-size:30px}nav{width:38%}nav button{font-size:14px;padding:14px 8px}article{padding:14px}article h1{font-size:25px}article p{font-size:15px}}
+</style>
+<meta charset="utf-8">
+<title>English</title>
+</head>
+<body>
+<div class="container">
+<header></header>
+<section>
+<nav>
+<button class="menu active" onclick="showPage('basic',this)">
+    พื้นฐานภาษาอังกฤษ
+</button>
+
+<button class="menu" onclick="showPage('vocab',this)">
+    คำศัพท์ (Vocabulary)
+</button>
+
+<button class="menu" onclick="showPage('grammar',this)">
+    ไวยากรณ์ (Grammar)
+</button>
+
+<button class="menu" onclick="showPage('greeting',this)">
+    คำทักทายภาษาอังกฤษ
+</button>
+
+<button class="menu" onclick="showPage('tense',this)">
+    Tenses
+</button>
+
+</nav>
+
+<article>
+
+<!-- พื้นฐานภาษาอังกฤษ -->
+<div id="basic" class="page show">
+<img src="images/P1.jpg" style="width:500px;">
+<h1>พื้นฐานภาษาอังกฤษ</h1>
+<h2>English Language</h2>
+<p>
+ภาษาอังกฤษเป็นภาษาสากลที่ใช้ในการสื่อสารในหลายประเทศ
+และมีความสำคัญต่อการศึกษา การทำงาน การท่องเที่ยว
+และการติดต่อสื่อสารระหว่างผู้คนทั่วโลก
+</p>
+<div class="card">
+<p class="example">English = ภาษาอังกฤษ</p>
+<p class="example">Hello = สวัสดี</p>
+<p class="example">Thank you = ขอบคุณ</p>
+</div>
+<h2>ทักษะภาษาอังกฤษ</h2>
+<p>การเรียนภาษาอังกฤษประกอบด้วย 4 ทักษะ ได้แก่การฟัง (Listening) การพูด (Speaking)การอ่าน (Reading) และการเขียน (Writing)</p>
+</div>
+
+<!-- Vocabulary -->
+<div id="vocab" class="page">
+<img src="images/P2.jpg" style="width:500px;">
+<h1>คำศัพท์ (Vocabulary)</h1>
+
+<h2>คำศัพท์พื้นฐานที่ใช้บ่อย</h2>
+
+<div class="card">
+
+<p class="example">School = โรงเรียน</p>
+<p class="example">Teacher = ครู</p>
+<p class="example">Student = นักเรียน</p>
+<p class="example">Friend = เพื่อน</p>
+<p class="example">Book = หนังสือ</p>
+<p class="example">Food = อาหาร</p>
+
+</div>
+
+<h2>ประโยคตัวอย่าง</h2>
+
+<p class="example">
+I go to school every day.
+</p>
+
+<p>
+ฉันไปโรงเรียนทุกวัน
+</p>
+
+</div>
+
+
+<!-- Grammar -->
+<div id="grammar" class="page">
+<img src="images/P3.jpg" style="width:500px;">
+<h1>ไวยากรณ์ (Grammar)</h1>
+
+<h2>โครงสร้างประโยคพื้นฐาน</h2>
+
+<p>
+ประโยคภาษาอังกฤษพื้นฐานมักประกอบด้วย
+Subject (ประธาน) + Verb (กริยา) + Object (กรรม)
+</p>
+
+<div class="card">
+
+<p class="example">I eat rice.</p>
+<p>ฉันกินข้าว</p>
+
+<p class="example">She reads a book.</p>
+<p>เธออ่านหนังสือ</p>
+
+</div>
+
+<h2>ความสำคัญของ Grammar</h2>
+
+<p>
+การเรียนไวยากรณ์ช่วยให้สามารถสร้างประโยค
+และสื่อสารภาษาอังกฤษได้อย่างถูกต้องและเข้าใจง่าย
+</p>
+
+</div>
+
+
+<!-- Greeting -->
+<div id="greeting" class="page">
+<img src="images/P4.jpg" style="width:500px;">
+<h1>คำทักทายภาษาอังกฤษ</h1>
+
+<h2>Common Greetings</h2>
+
+<div class="card">
+
+<p class="example">Hello = สวัสดี</p>
+<p class="example">Hi = สวัสดี</p>
+<p class="example">Good morning = สวัสดีตอนเช้า</p>
+<p class="example">Good afternoon = สวัสดีตอนบ่าย</p>
+<p class="example">Good evening = สวัสดีตอนเย็น</p>
+<p class="example">Goodbye = ลาก่อน</p>
+
+</div>
+
+<h2>ตัวอย่างบทสนทนา</h2>
+
+<p class="example">
+A: Hello! How are you?
+</p>
+
+<p class="example">
+B: I'm fine, thank you.
+</p>
+
+<p>
+แปลว่า A: สวัสดี! คุณสบายดีไหม?
+B: ฉันสบายดี ขอบคุณ
+</p>
+
+</div>
+
+
+<!-- Tenses -->
+<div id="tense" class="page">
+<img src="images/P5.jpg" style="width:500px;">
+
+<h1>Tenses</h1>
+
+<h2>กาลในภาษาอังกฤษ</h2>
+
+<p>
+Tenses ใช้บอกช่วงเวลาของเหตุการณ์
+เช่น ปัจจุบัน อดีต และอนาคต
+</p>
+
+<div class="card">
+
+<p class="example">Present Simple</p>
+<p>I study English every day.</p>
+<p>ฉันเรียนภาษาอังกฤษทุกวัน</p>
+
+<p class="example">Past Simple</p>
+<p>I studied English yesterday.</p>
+<p>ฉันเรียนภาษาอังกฤษเมื่อวาน</p>
+
+<p class="example">Future Simple</p>
+<p>I will study English tomorrow.</p>
+<p>ฉันจะเรียนภาษาอังกฤษพรุ่งนี้</p>
+
+</div>
+
+</div>
+
+</article>
+
+</section>
+
+
+<footer>
+จัดทำโดย นางสาวกัญญาณัฐ มีวงค์ ชั้น ม.6/8 เลขที่ 15<br>
+โรงเรียนรัตนราษฎร์บำรุง
+</footer>
+
+</div>
+
+
+<script>
+
+function showPage(id,button){
+
+    document.querySelectorAll('.page')
+    .forEach(p => p.classList.remove('show'));
+
+    document.getElementById(id)
+    .classList.add('show');
+
+    document.querySelectorAll('.menu')
+    .forEach(b => b.classList.remove('active'));
+
+    button.classList.add('active');
+}
+
+</script>
+
+</body>
+</html>
